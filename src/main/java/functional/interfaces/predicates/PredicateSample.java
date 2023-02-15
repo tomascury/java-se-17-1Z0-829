@@ -1,4 +1,4 @@
-package function.predicates;
+package functional.interfaces.predicates;
 
 import java.util.function.*;
 

@@ -1,4 +1,4 @@
-package function.consumers;
+package functional.interfaces.consumers;
 
 import java.util.*;
 import java.util.function.*;

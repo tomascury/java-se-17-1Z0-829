@@ -1,4 +1,4 @@
-package function.lambdas;
+package functional.interfaces.lambdas;
 
 public class LambdaSample {
 

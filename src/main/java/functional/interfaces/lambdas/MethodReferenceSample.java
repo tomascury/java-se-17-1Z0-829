@@ -1,4 +1,4 @@
-package function.lambdas;
+package functional.interfaces.lambdas;
 
 import java.util.*;
 import java.util.function.*;

@@ -1,4 +1,4 @@
-package function.operators;
+package functional.interfaces.operators;
 
 import java.util.function.*;
 

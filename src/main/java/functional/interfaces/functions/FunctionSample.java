@@ -1,4 +1,4 @@
-package function.functions;
+package functional.interfaces.functions;
 
 import java.util.function.*;
 

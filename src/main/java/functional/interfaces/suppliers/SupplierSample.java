@@ -1,4 +1,4 @@
-package function.suppliers;
+package functional.interfaces.suppliers;
 
 import java.time.*;
 import java.util.function.*;
