@@ -63,6 +63,26 @@ public class MethodReferenceSample {
     l2.add("100");
     System.out.println(l2);
 
+    //Context for Method References
+    Supplier<Integer> sHowManyAnimalsL = () -> Animal.howMany(); // lambda
+    Supplier<Integer> sHowManyAnimalsMR = Animal::howMany; // method reference
+    System.out.println(sHowManyAnimalsL.get());
+    System.out.println(sHowManyAnimalsMR.get());
 
+    Function<Animal, Integer> fHowManyAnimalsL = Animal -> Animal.howMany(Animal); // lambda
+    Function<Animal, Integer> fHowManyAnimalsMR = Animal::howMany; // method reference
+    System.out.println(fHowManyAnimalsL.apply(new Animal()));
+    System.out.println(fHowManyAnimalsMR.apply(new Animal()));
+
+    BiFunction<Animal, Animal, Integer> bfHowManyAnimalsL = (p1, p2) -> Animal.howMany(p1, p2); // lambda
+    BiFunction<Animal, Animal, Integer> bfHowManyAnimalsMR = Animal::howMany; // method reference
+    System.out.println(bfHowManyAnimalsL.apply(new Animal(), new Animal()));
+    System.out.println(bfHowManyAnimalsMR.apply(new Animal(), new Animal()));
+  }
+}
+
+class Animal {
+  public static Integer howMany(Animal... animals) {
+    return animals.length;
   }
 }
